@@ -90,7 +90,15 @@
                     );
 
 @misc_no_underscore_objs = (
+                            blas_memory_alloc,
+                            blas_memory_alloc_nolock,
+                            blas_memory_free,
+                            blas_memory_free_nolock,
+                            blas_shutdown,
+                            goto_get_num_procs,
                             goto_set_num_threads,
+                            gotoblas_init,
+                            gotoblas_quit,
                             openblas_get_config,
                             openblas_get_corename,
                            );
@@ -2953,21 +2961,21 @@
 
 #These function may need 2 underscores.
 @lapack_embeded_underscore_objs=(xerbla_array, chla_transtype, slasyf_rook,
-				 ssytf2_rook, ssytrf_rook, ssytrs_rook,
-				 ssytri_rook, ssycon_rook, ssysv_rook,
-				 chetf2_rook, chetrf_rook, chetri_rook,
-				 chetrs_rook, checon_rook, chesv_rook,
-				 clahef_rook, clasyf_rook,
-				 csytf2_rook, csytrf_rook, csytrs_rook,
-				 csytri_rook, csycon_rook, csysv_rook,
-				 dlasyf_rook,
-				 dsytf2_rook, dsytrf_rook, dsytrs_rook,
-				 dsytri_rook, dsycon_rook, dsysv_rook,
-				 zhetf2_rook, zhetrf_rook, zhetri_rook,
-				 zhetrs_rook, zhecon_rook, zhesv_rook,
-				 zlahef_rook, zlasyf_rook,
-				 zsytf2_rook, zsytrf_rook, zsytrs_rook,
-				 zsytri_rook, zsycon_rook, zsysv_rook,
+                                 ssytf2_rook, ssytrf_rook, ssytrs_rook,
+                                 ssytri_rook, ssycon_rook, ssysv_rook,
+                                 chetf2_rook, chetrf_rook, chetri_rook,
+                                 chetrs_rook, checon_rook, chesv_rook,
+                                 clahef_rook, clasyf_rook,
+                                 csytf2_rook, csytrf_rook, csytrs_rook,
+                                 csytri_rook, csycon_rook, csysv_rook,
+                                 dlasyf_rook,
+                                 dsytf2_rook, dsytrf_rook, dsytrs_rook,
+                                 dsytri_rook, dsycon_rook, dsysv_rook,
+                                 zhetf2_rook, zhetrf_rook, zhetri_rook,
+                                 zhetrs_rook, zhecon_rook, zhesv_rook,
+                                 zlahef_rook, zlasyf_rook,
+                                 zsytf2_rook, zsytrf_rook, zsytrs_rook,
+                                 zsytri_rook, zsycon_rook, zsysv_rook,
 
 
 

@@ -46,6 +46,7 @@
 #define printf	_cprintf
 #endif
 
+/*
 #ifdef __ELF__
 int __xerbla(char *message, blasint *info, blasint length){
 
@@ -58,6 +59,7 @@ int __xerbla(char *message, blasint *info, blasint length){
 int BLASFUNC(xerbla)(char *, blasint *, blasint) __attribute__ ((weak, alias ("__xerbla")));
 
 #else
+*/
 
 int BLASFUNC(xerbla)(char *message, blasint *info, blasint length){
 
@@ -67,4 +69,4 @@ int BLASFUNC(xerbla)(char *message, blasint *info, blasint length){
   return 0;
 }
 
-#endif
+//#endif
