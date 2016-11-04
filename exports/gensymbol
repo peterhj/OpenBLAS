@@ -90,6 +90,7 @@
                     );
 
 @misc_no_underscore_objs = (
+                            hugetlb_allocated,
                             blas_memory_alloc,
                             blas_memory_alloc_nolock,
                             blas_memory_free,
